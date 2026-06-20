@@ -1,0 +1,150 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robb world</title>
+    <meta
+      name="description"
+      content="Um blog pessoal para opiniÃµes, pequenas cenas do dia a dia e coisas favoritas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Robb world">
+        <span class="brand-mark">RW</span>
+        <span>Robb world</span>
+      </a>
+      <nav class="top-nav" aria-label="Navegacao principal">
+        <a href="index.html#posts">Posts</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#ideias">Ideias</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/images/covers/hero-collage.png"
+          alt="Colagem colorida com cadernos, formas abstratas e objetos criativos"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="kicker">blog pessoal</p>
+          <h1 id="hero-title">Robb world</h1>
+          <p>
+            Opiniao, cotidiano, cultura pop, descobertas pequenas e tudo que
+            merece virar uma nota antes que a memoria mude de assunto.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#posts">Ler posts</a>
+            <a class="button ghost" href="#ideias">Fila de ideias</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-grid" aria-label="Temas do blog">
+        <article>
+          <span class="tile-icon coral"></span>
+          <h2>Dia a dia</h2>
+          <p>Pequenas cenas, pensamentos no meio da rotina e observacoes soltas.</p>
+        </article>
+        <article>
+          <span class="tile-icon yellow"></span>
+          <h2>Opinioes</h2>
+          <p>Textos com ponto de vista, do tipo que pede cafe e duas abas abertas.</p>
+        </article>
+        <article>
+          <span class="tile-icon teal"></span>
+          <h2>Favoritos</h2>
+          <p>Filmes, jogos, musicas, lugares, objetos e achados que ficam ecoando.</p>
+        </article>
+      </section>
+
+      <section class="section-shell" id="posts">
+        <div class="section-heading">
+          <p class="kicker">publicado</p>
+          <h2>Texto mais recente</h2>
+        </div>
+
+        <div class="toolbar" aria-label="Filtros de posts">
+          <label class="search-label">
+            <span>Buscar</span>
+            <input id="searchInput" type="search" placeholder="aparencia, futebol, mmorpg..." />
+          </label>
+          <div class="filter-buttons" role="group" aria-label="Categorias">
+            <button class="filter-button active" type="button" data-filter="todos">Todos</button>
+            <button class="filter-button" type="button" data-filter="opinioes">Opinioes</button>
+            <button class="filter-button" type="button" data-filter="futebol">Futebol</button>
+            <button class="filter-button" type="button" data-filter="mmorpg">MMORPG</button>
+            <button class="filter-button" type="button" data-filter="filmes-series">Filmes e series</button>
+          </div>
+        </div>
+
+        <div class="post-grid" id="postGrid">
+          <article class="post-card featured" data-category="opinioes">
+            <p class="post-meta">Opinioes - 5 min</p>
+            <h3>Quando a aparencia muda a postura</h3>
+            <p>
+              Uma reflexao sobre corpo, humor, vaidade e esse momento estranho
+              em que a gente passa a se mostrar de outro jeito.
+            </p>
+            <a href="posts/opinioes/quando-a-aparencia-muda-a-postura.html">Ler reflexao</a>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState">Ainda nao tem post publicado nessa categoria.</p>
+      </section>
+
+      <section class="about-band" id="sobre">
+        <div>
+          <p class="kicker">sobre o blog</p>
+          <h2>Um lugar para pensar em voz alta.</h2>
+        </div>
+        <p>
+          Este espaco pode crescer sem ficar preso a um unico assunto. Hoje uma
+          cronica, amanha uma lista, depois uma opiniao maior. O fio condutor e
+          simples: registrar o que chamou atencao.
+        </p>
+      </section>
+
+      <section class="section-shell ideas" id="ideias">
+        <div class="section-heading">
+          <p class="kicker">fila de ideias</p>
+          <h2>O que vem depois</h2>
+        </div>
+        <ul class="idea-list">
+          <li>
+            <span>Futebol</span>
+            <p>Textos sobre jogos, clubes, personagens, memoria afetiva e opinioes de arquibancada.</p>
+          </li>
+          <li>
+            <span>MMORPG</span>
+            <p>Reflexoes sobre mundos online, comunidade, grind, nostalgia e vontade de morar dentro de um mapa.</p>
+          </li>
+          <li>
+            <span>Filmes</span>
+            <p>Impressões, listas, cenas que ficaram na cabeca e filmes que mudam depois de alguns dias.</p>
+          </li>
+          <li>
+            <span>Series</span>
+            <p>Comentarios sobre temporadas, personagens, finais, expectativas e historias que prendem.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Robb world - feito para mudar de assunto com estilo.</p>
+      <a href="#">Voltar ao topo</a>
+    </footer>
+    <script src="js/blog.js"></script>
+  </body>
+</html>
